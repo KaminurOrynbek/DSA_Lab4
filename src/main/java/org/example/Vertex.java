@@ -40,14 +40,6 @@ public class Vertex<V> {
         return Objects.equals(data, vertex.data);
     }
 
-    // Overriding hashCode method
-    @Override
-    public int hashCode() {
-        int result = 17; // Start with a non-zero constant
-        result = 31 * result + (data == null ? 0 : data.hashCode());
-        return result;
-    }
-
     // Overriding toString method for better readability
     @Override
     public String toString() {
